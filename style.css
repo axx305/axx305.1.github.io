@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body { 
+    background-color: hsl(210, 46%, 95%);
+    margin: 130px 120px;
+    display: grid;
+    grid-template-areas:    'd d d d j k'
+                            'ja p p p p k'  ;
+    gap: 20px;
+    min-width: 800px;
+
+}
+body div {
+    color: white;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+
+body div:nth-of-type(1) {
+    grid-area: d;
+    background-color: hsl(263, 55%, 52%);
+    display: grid;
+    background-image: url('/Users/asad/Downloads/testimonials-grid-section-main/images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position-x: 450px;
+    background-position-y: 0px;
+} 
+
+
+body div:nth-of-type(2) {
+    grid-area: j;
+    background-color: hsl(217, 19%, 35%);
+
+}
+
+body div:nth-of-type(3) {
+    grid-area: ja;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 81%);
+
+}
+
+body div:nth-of-type(4) {
+    grid-area: p;
+    background-color: hsl(219, 29%, 14%);
+
+}
+
+body div:nth-of-type(5) {
+    grid-area: k;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 81%);
+}
+
+@media (max-width: 1000px) {
+    body {
+        grid-template-areas:    'd'
+                                'j'
+                                'k'
+                                'ja'
+                                'p'  ;
+        min-width: 400px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+}
+
+/* box styling */
+
+/* all */
+
+.dan, .jon, .j, .p, .k {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.dan img, .jon img, .j img, .p img, .k img {
+    border-radius: 50px;
+    width: 35px;
+    border: 2px solid grey;
+    margin-top: -10px;
+}
+
+.dan aside, .jon aside, .j aside, .p aside, .k aside {
+    margin-left: 20px;
+    font-size: small;
+}
+
+/* dan */
+
+body div:nth-of-type(1) h2 {
+    margin-bottom: 15px;
+    font-size: large;  
+} 
+
+body div:nth-of-type(1) p {
+    margin-bottom: 10px;
+    font-size: medium;
+    color: hsl(0, 0%, 81%);
+} 
+
+/* jon */
+
+body div:nth-of-type(2) h2 {
+    margin-bottom: 15px;
+    font-size: large;  
+} 
+
+body div:nth-of-type(2) p {
+    margin-bottom: 10px;
+    font-size: medium;
+    color: hsl(0, 0%, 81%);
+} 
+
+
+/* Janet */
+
+body div:nth-of-type(3) h2 {
+    margin-bottom: 15px;
+    font-size: large; 
+    font-weight: bold;
+    color:gray;
+
+}
+
+body div:nth-of-type(3) h3 {
+    font-weight: bold;
+    color:rgb(94, 94, 94);
+
+}
+
+body div:nth-of-type(3) p {
+    color: hsl(0, 0%, 75%);
+}
+
+
+/* patrick */
+
+body div:nth-of-type(4) h2 {
+    margin-bottom: 15px;
+    font-size: large;  
+} 
+
+body div:nth-of-type(4) p {
+    margin-bottom: 10px;
+    font-size: medium;
+    color: hsl(0, 0%, 81%);
+} 
+
+/* Kira */
+
+body div:nth-of-type(5) h2 {
+    margin-bottom: 15px;
+    font-size: large; 
+    font-weight: bold;
+    color:gray;
+
+}
+
+body div:nth-of-type(5) h3 {
+    font-weight: bold;
+    color:rgb(94, 94, 94);
+
+}
+
+body div:nth-of-type(5) p {
+    color: hsl(0, 0%, 75%);
+}
+
+/* footer */
+footer {
+    position: fixed;
+    bottom: 4px;
+
+}
+
+
